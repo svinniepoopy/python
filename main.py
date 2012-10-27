@@ -24,8 +24,10 @@ def buildTrie():
        and return a tree
     """
     source = '/usr/share/dict/english.dict'
-    word_file = open(source, 'r+')
-    data = word_file.readlines()
+#    word_file = open(source, 'r+')
+#    data = word_file.readlines()
+    with open(source, 'r+') as word_file:
+        data = word_file.readlines()
     for k, v in enumerate(data):
         """ had to add rstrip() to remove trailing characters """
         vlowercase = v.lower().rstrip()
