@@ -1,0 +1,19 @@
+SpellCheck Coding Problem:
+        - reads in a list of words
+        - provides spelling suggestions
+        - Lang: Python2.7
+        
+FILES:
+        - SpellTrie.py: creates a trie to store dictionary
+        - SpellCheck.py: interface to the trie, corrects string errors
+        - GenWords.py: returns a list of words with the three classes of spelling
+          mistakes
+        - main.py: driver
+
+SETUP:
+    - cp/mv english.dict to /usr/share/dict
+
+TODO: 
+    - have __correctVowel__ fix more than one vowel errors
+    - complete the problem in C++ (wanted to do python first to brush up)
+    - extra credit
