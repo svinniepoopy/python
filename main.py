@@ -23,11 +23,12 @@ def buildTrie():
     """Read in the list of words from /usr/share/dict
        and return a tree
     """
-    source = '/usr/share/dict/english.dict'
-#    word_file = open(source, 'r+')
-#    data = word_file.readlines()
-    with open(source, 'r+') as word_file:
-        data = word_file.readlines()
+    source = '/usr/share/dict/eenglish.dict'
+    try:
+        with open(source, 'r+') as word_file:
+            data = word_file.readlines()
+    except IOError:
+        sys.exit("could not open file")
     for k, v in enumerate(data):
         """ had to add rstrip() to remove trailing characters """
         vlowercase = v.lower().rstrip()
