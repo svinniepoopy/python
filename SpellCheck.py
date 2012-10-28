@@ -42,7 +42,7 @@ class SpellCheck():
 	    return tree.getKey(word)
 	""" else change every vowel in word from VOWELS """
 	for char_index, ch in list(enumerate(word[:])):
-	    if ch in self.VOWELS[char_index]:
+            if ch in self.VOWELS:
 		for vowel in self.VOWELS:
 		    new_word = string.replace(word, ch, vowel, 1)
 		    self.word = new_word
