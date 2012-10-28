@@ -7,12 +7,6 @@ SpellCheck.py
 prints best spelling suggestion based rules or nothing.
 
 scrubs input words for case, repeated letters and incorrect vowel errors.
-
-@revision 1: 
-line[50] for vowel in self.VOWELS[char_index] --> for vowel in self.VOWELS
-line[89] except KeyError, TypeError --> except (KeyError, TypeError)
-
-
 """
 import string
 import difflib
